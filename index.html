@@ -10,37 +10,29 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Git it Done</title>
 </head>
-
-<body class="flex-column min-100-vh">
-  <header class="hero">
-    <h1 class="app-title"><i class="fab fa-github"></i> Git it Done!</h1>
-    <p>Search for a GitHub user or click on a language to see a list of repositories and how many open issues they have!
-    </p>
-  </header>
-
-
+<body class="flex-column container">
+    <header class="hero">
+        <h1 class="app-title">Weather Forecaster</h1>
+    <p>Weather Forecaster is the quick way to get the weather without any extras.</p>
+    </header>
   <main>
-  <div class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
-
-      <div class="card">
-        <h3 class="card-header text-uppercase">Search By User</h3>
+  <div class=" justify-space-between">
+    <div class="col-12 col-md-4 search">
+       <div class="card">
+        <h3 class="card-header ">Enter the City</h3>
         <form id="user-form" class="card-body">
-          <label class="form-label" for="username">Username</label>
-          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
-          <button type="submit" class="btn">Get User</button>
+          <label class="form-label" for="cityname"></label>
+          <input name="cityname" id="cityname" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn">Click for Weather</button>
         </form>
       </div>
-    </div>
+     </div>
   </div>
     <div class="col-12 col-md-8">
-      <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
-      <div id="repos-container" class="list-group">
-
+        <div id="weather-container" class="list-group">
       </div>
     </div>
   </main>
-
   <script src="./assets/js/weather.js"></script>
 </body>
 
